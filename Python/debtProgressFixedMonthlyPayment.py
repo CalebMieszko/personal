@@ -8,7 +8,7 @@ monthlyInterestRate = annualInterestRate / 12.0
 paidTotal = 0
 
 for month in range(0, 12):
-    payment = 800 #set to monthlyPaymentRate * balance, this finds min pmt/mo progress, set to an int/float display progress at that #
+    payment = monthlyPaymentRate * balance #set to monthlyPaymentRate * balance, this finds min pmt/mo progress, set to an int/float display progress at that #
     paidTotal += payment
     monthlyUnpaidBalance = balance - payment
     balance = monthlyUnpaidBalance + (monthlyInterestRate * monthlyUnpaidBalance)

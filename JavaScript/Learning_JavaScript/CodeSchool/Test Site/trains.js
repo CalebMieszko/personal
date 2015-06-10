@@ -49,7 +49,7 @@ function addPassenger (passengerName, list){
     if (list.length === 0) {
         list.push(passengerName);
     } else {
-        for (i = 0; i < list.length; i++) {
+        for (var i = 0; i < list.length; i++) {
             if (list[i] === undefined){
                 list[i] = passengerName;
                 return list;
